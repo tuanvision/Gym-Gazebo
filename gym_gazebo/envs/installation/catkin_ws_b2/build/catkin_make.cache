@@ -1,0 +1,2 @@
+cv_bridge:ros_astra_camera:ros_astra_launch:ros_image_processing
+-DCATKIN_DEVEL_PREFIX=/home/tuanguyen/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/tuanguyen/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/install -G Unix Makefiles

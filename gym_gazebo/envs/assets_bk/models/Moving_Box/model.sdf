@@ -1,0 +1,57 @@
+<sdf version='1.6'>  
+  <model name='moving_box'>
+      <pose frame=''>-4.131300 -1.438250 0.5 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.2 0.2 0.999997</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+              <collide_without_contact>1</collide_without_contact>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.2 0.2 0.999997</size>
+            </box>
+          </geometry>
+        </visual>
+        <sensor name='my_contact' type='contact'>
+          <plugin name="my_plugin" filename="libcontact.so"/>
+          <contact>
+            <collision>collision</collision>
+          </contact>
+          <update_rate>1</update_rate>
+        </sensor>
+        <self_collide>0</self_collide>
+        <inertial>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <kinematic>0</kinematic>
+        <gravity>0</gravity>
+      </link>
+      <plugin name='model_push' filename='libmodel_push.so'/>
+    </model>
+</sdf>

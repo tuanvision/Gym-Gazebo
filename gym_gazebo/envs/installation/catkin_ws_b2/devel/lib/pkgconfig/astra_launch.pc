@@ -1,0 +1,8 @@
+prefix=/home/tuanguyen/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel
+
+Name: astra_launch
+Description: Description of astra_launch
+Version: 0.2.1
+Cflags: 
+Libs: -L/home/tuanguyen/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib 
+Requires: 

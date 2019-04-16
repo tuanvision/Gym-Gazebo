@@ -1,0 +1,1 @@
+{"discount_factor": 0.99, "update_target_network": 1000, "network_inputs": 20, "learn_start": 64, "learning_rate": 0.00025, "current_episode": 600, "network_structure": [15, 15], "episodes": 10000, "steps": 1000, "memory_size": 1000000, "network_outputs": 11, "exploration_rate": 0.05, "minibatch_size": 64}

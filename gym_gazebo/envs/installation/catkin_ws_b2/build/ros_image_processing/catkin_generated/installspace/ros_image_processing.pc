@@ -1,0 +1,8 @@
+prefix=/home/tuanguyen/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/install
+
+Name: ros_image_processing
+Description: Description of ros_image_processing
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/tuanguyen/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/install/lib 
+Requires: 
